@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		01AE19B02502128B00C46058 /* BISLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AE19AE2502128B00C46058 /* BISLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01AE19B7250212DC00C46058 /* BISLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AE19B6250212DC00C46058 /* BISLogger.swift */; };
+		01AE19B92502133C00C46058 /* BISLogger+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AE19B82502133C00C46058 /* BISLogger+Extensions.swift */; };
+		01AE19BB2502136D00C46058 /* BISLogger+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AE19BA2502136D00C46058 /* BISLogger+Types.swift */; };
+		01AE19BD2502140600C46058 /* BISLogger+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AE19BC2502140600C46058 /* BISLogger+Methods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01AE19AB2502128B00C46058 /* BISLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BISLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AE19AE2502128B00C46058 /* BISLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BISLogger.h; sourceTree = "<group>"; };
 		01AE19AF2502128B00C46058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01AE19B6250212DC00C46058 /* BISLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BISLogger.swift; sourceTree = "<group>"; };
+		01AE19B82502133C00C46058 /* BISLogger+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BISLogger+Extensions.swift"; sourceTree = "<group>"; };
+		01AE19BA2502136D00C46058 /* BISLogger+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BISLogger+Types.swift"; sourceTree = "<group>"; };
+		01AE19BC2502140600C46058 /* BISLogger+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BISLogger+Methods.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				01AE19AE2502128B00C46058 /* BISLogger.h */,
 				01AE19AF2502128B00C46058 /* Info.plist */,
+				01AE19B6250212DC00C46058 /* BISLogger.swift */,
+				01AE19B82502133C00C46058 /* BISLogger+Extensions.swift */,
+				01AE19BA2502136D00C46058 /* BISLogger+Types.swift */,
+				01AE19BC2502140600C46058 /* BISLogger+Methods.swift */,
 			);
 			path = BISLogger;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					01AE19AA2502128B00C46058 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -131,6 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01AE19B92502133C00C46058 /* BISLogger+Extensions.swift in Sources */,
+				01AE19B7250212DC00C46058 /* BISLogger.swift in Sources */,
+				01AE19BB2502136D00C46058 /* BISLogger+Types.swift in Sources */,
+				01AE19BD2502140600C46058 /* BISLogger+Methods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 		01AE19B42502128B00C46058 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3G4595GUAV;
@@ -276,6 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = insu.party.BISLogger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +303,7 @@
 		01AE19B52502128B00C46058 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3G4595GUAV;
